@@ -3,7 +3,6 @@ import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 import { ChangeEvent, useState } from "react";
 
-console.log(process.env.WEATHER_API_KEY, "key")
 export default function SearchBar() {
   const {data, isLoading, isError, refetch} = useQuery({
     enabled: false,
